@@ -1,0 +1,80 @@
+body{
+	font-family: "futura-pt",sans-serif;
+	margin: 0;
+	background: #fafafa;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align: center;
+	font-family: "futura-pt",sans-serif;
+	
+}
+
+input, textarea{
+	font-family: "futura-pt",sans-serif;
+	font-size: 16px;
+	display: block;
+	border: solid 1px #212124;
+	margin-bottom: 18px;
+	padding: 14px 14px 14px 65px;
+	width: 307px;
+	
+}
+
+input[type="submit"]{
+	width: 388px;
+	background-color: #212124;
+	color: white;
+	padding: 14px;
+	cursor: pointer;
+	
+	background-position: 48px 70px;
+	transition: all 200ms ease-out;
+}
+
+input[type="submit"]:hover{
+	background: #212124 url(../_images/plane.svg) no-repeat;
+	background-position: center center;
+	background-size: 35px;
+	color: transparent;	
+
+}
+
+input[name='name']{
+	background: url(../_images/person.svg) no-repeat;
+	background-size: 27px;
+	background-position: 14px center;
+}
+input[name='email']{
+	background: url(../_images/mail.svg) no-repeat;
+	background-size: 27px;
+	background-position: 14px center;
+}
+textarea[name='message']{
+	background: url(../_images/dots.svg) no-repeat;
+	background-size: 27px;
+	background-position: 14px 18px;
+	height: 218px;
+}
+#contactus .spmhidip
+{
+   display:none;
+   width:10px;
+   height:3px;
+}
+#fg_crdiv
+{
+   font-family : Arial, sans-serif;
+   font-size: 0.3em;
+   opacity: .2;
+   -moz-opacity: .2;
+   filter: alpha(opacity=20);   
+}
+#fg_crdiv p
+{
+    display:none;
+}
+
+:focus{
+	outline: none;
+}

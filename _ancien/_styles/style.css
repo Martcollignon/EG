@@ -1,0 +1,720 @@
+/*				CSS EG ARCHITECTURE            */
+
+/* ===============================
+			BASIC CSS
+=============================== */
+
+body{
+	margin: 0 auto;
+	font-family: "futura-pt",sans-serif;
+	padding: 30px;
+	color: #444348;
+	line-height: 150%;
+}
+.container{
+	margin: 0 auto;
+	max-width: 1024px;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+	font-size: 36px;
+	font-weight: 200;
+}
+h2{ 	
+	font-size: 24px;
+}
+a{
+	text-decoration: none;
+}
+
+.clear{.
+	clear: both;
+}
+
+.hide{
+	display: none;
+}
+
+:focus{
+	outline: none;
+}
+.clearfix{
+	clear: both;
+}
+
+/* ===============================
+			BUTTONS
+=============================== */
+
+button{
+	border: none;
+}
+
+a{
+	width: inherit;
+	height: inherit;
+	color: inherit;
+}
+
+.more{
+	display: inline-block;
+	width: 102px;
+	padding: 16px;
+	padding-right: 88px;
+	background: #212124 url(../_images/right_chevron.png);
+	background-repeat: no-repeat;
+	background-position-y: center;
+	background-position-x: 170px;
+	color: white;
+	text-transform: uppercase;
+	transition: background-position-x 200ms ease-out;
+}
+
+.more:hover{
+	background: #212124 url(../_images/eye.svg) no-repeat;
+	background-position: center center;
+	background-size: 50px;
+	color: transparent;	
+}
+
+.prev, .share, .next{
+	position: absolute;
+	bottom: -130px;
+	width: 213px;
+	height: 50px;
+	border: solid 2px #212124;
+	text-transform: uppercase;
+	background-color: #fff;
+}
+.prev:hover, .share:hover, .next:hover{
+	background:  #212124;
+	color: white;
+}
+.share{
+	left: calc(50% - 106px);
+}
+
+.next{
+	right: 50px;
+}
+
+.prev{
+	left: 50px;
+}
+.prev_before, .next_after{
+	width: 50px;
+	height: 50px;
+	background: #212124;
+	position: absolute;
+	top: -2px;
+}
+.prev_before{
+	left: -50px;
+	background: #212124 url(../_images/right_chevron.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	transform: rotate(180deg);
+}
+
+.next_after{
+	right: -50px;
+	background: #212124 url(../_images/right_chevron.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* ===============================
+			CONTACT
+=============================== */
+/* FORM */
+
+form{
+	float: left;
+	margin-left: 105px;
+}
+input, textarea{
+	display: block;
+	border: solid 1px #212124;
+	margin-bottom: 18px;
+	padding: 14px 14px 14px 65px;
+	width: 307px;
+}
+
+input[type="submit"]{
+	width: 395px;
+	background-color: #212124;
+	color: white;
+	padding: 14px;
+}
+
+input[type="submit"]:hover{
+	background: #212124 url(../_images/plane.svg) no-repeat;
+	background-position: center center;
+	background-size: 35px;
+	color: transparent;	
+}
+
+input[name="name"]{
+	background: url(../_images/person.svg) no-repeat;
+	background-size: 27px;
+	background-position-y: center;
+	background-position-x: 14px;
+}
+input[name="mail"]{
+	background: url(../_images/mail.svg) no-repeat;
+	background-size: 27px;
+	background-position-y: center;
+	background-position-x: 14px;
+}
+textarea[name="message"]{
+	background: url(../_images/dots.svg) no-repeat;
+	background-size: 27px;
+	background-position-y: 18px;
+	background-position-x: 14px;
+	height: 218px;
+}
+
+/* DESCRIPTION */
+
+.contact_description{
+	width: 395px;
+	height: 455px;
+	background: #212124;
+	color: white;
+	float: right;
+	margin-right: 105px;
+	
+}
+
+.contact_description li{
+	margin-bottom: 25px;
+	list-style: none;
+	
+}
+
+.contact_image{
+	width: 25px;
+	height: 25px;
+	margin-right: 20px;
+	position: relative;
+	top: 5px;
+}
+
+.map{
+	background: url(../_images/maps.png);
+	width: 395px;
+	height: 147px;
+}
+
+.lien_map{
+	display: table;
+	height: 40px;
+	text-align: center;
+	color: white;
+	margin: auto;
+	margin-top: 15px;
+}
+
+/* ===============================
+			ARTICLE
+=============================== */
+article{
+	width: 286px;
+	background: #FFF;
+	margin-top: 80px;
+	padding: 40px;
+}
+article p{
+	margin-top: 38px;
+	line-height: 150%;
+}
+.titre_article{
+	display: inline-block;
+	padding-bottom: 5px;
+	border-bottom: solid 5px #36A1AF;
+	font-weight: 500;
+}
+.right{
+	float: right;
+}
+
+/* ===============================
+			SECTIONS
+=============================== */
+
+section, .section , header{
+	height: 100vh;
+	background: #FAFAFA;
+	overflow: hidden;
+}
+
+.section_header{
+	width: 100%;
+	background: url(../_images/photos/header_image.png) center no-repeat;
+	background-size: cover;
+	opacity: 0;
+	
+	-webkit-transition: all .2s ease;
+	-webkit-animation: opacity 1s ease forwards;
+	-webkit-animation-delay: .3s;
+}
+
+.section_equipe{
+	width: 100%;
+	background: url(../_images/photos/equipe_image.png) center no-repeat;
+	background-size: cover;
+}
+
+.section_projet1{
+	width: 100%;
+	background: url(../_images/photos/projet1_image.png) center no-repeat;
+	background-size: cover;
+}
+
+.section_projet2{
+	width: 100%;
+	background: url(../_images/photos/projet2_image.png) center no-repeat;
+	background-size: cover;
+}
+
+.section_contact{
+	height: 100%;
+	padding: 85px 0px;
+}
+
+.section_allprojet{
+	height: 100%;
+	padding: 85px 0px;
+}
+
+.projet_content{
+	height: inherit;
+	padding-bottom: 200px;
+}
+
+.section_description{
+	height: 100%;
+	padding: 85px 0px;
+}
+
+.section_description h1{
+	max-width: 811px;
+	text-align: center;
+	margin: auto;
+	line-height: 150%;
+}
+
+footer{
+	padding: 30px;
+	height: 70px;
+}
+.image_right{
+	float: right;
+}
+
+.section_contact h1, .section_allprojet h1{
+	display: table;
+	padding-bottom: 5px;
+	border-bottom: solid 5px #36A1AF;
+	font-weight: 500;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 70px;
+	clear: both;
+}
+
+.projet p{
+	margin-bottom: 40px;
+}
+
+.section_allprojet a{
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: 288px;
+	height: 288px;
+	background: #444;
+	margin-right: 79px;
+	margin-bottom: 79px;
+	float: left;
+	color: transparent;
+	
+}
+.allprojet a img{	
+	height: 288px;
+	margin-left:-50%;
+	background-position: center center;
+	transition: all 200ms ease-out;
+}
+.allprojet a h1{
+	display: table;
+	position: absolute;
+	top: 120px;
+	text-align: center;
+	width: 100%;
+	border: none;
+}
+
+.allprojet a:hover h1{
+	color: #fafafa;
+	text-shadow: 1px 1px 1px black;
+}
+
+.allprojet a:hover img{
+	-webkit-filter: blur(7px);
+}
+
+.allprojet a:nth-child(3){
+	margin: 0;
+}
+.allprojet a:nth-child(6){
+	margin: 0;
+}
+.allprojet a:nth-child(9){
+	margin: 0;
+}
+
+/*		SECTION EQUIPE		*/
+
+.section__peb{
+	height: 100%;
+	padding: 70px 0;
+}
+
+.section__peb img{
+	width: 289px;
+	height: 298px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 240px;
+}
+
+.section__peb--text{
+	float: right;
+	width: 630px;
+	padding: 40px;
+	background: #fff;
+	height: 219px;
+}
+
+.section__peb p:nth-child(2){
+	margin-top: 40px;
+}
+
+.section__peb a{
+	text-decoration: underline;
+	color: #40B0BD;
+}
+
+/* ===============================
+			HEADER
+=============================== */
+
+.index{
+	z-index: 1;
+	position: fixed;
+	top: 30px;
+	left: 70px;
+	width: 213px;
+	height: 50px;
+	border: solid 1px #212124;
+	text-transform: uppercase;
+	background-color: #fff;
+}
+
+.index_before{
+	position: absolute;
+	left: -40px;
+	top:-2px;
+	width: 46px;
+	height: 46px;
+	border: solid 2px #212124;
+	background: #FFF url(../_images/next.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 35px;
+}
+
+
+.burger_active{
+	background: #FFF url(../_images/close_bck.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 30px;
+}
+
+.logo{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: calc(50% - 200px);
+	left: calc(50% - 145px);
+	background: #fff center fixed;
+	padding: 45px;
+	opacity: 0;
+	
+	-webkit-transition: all .2s ease;
+	-webkit-animation: fadeInUp 700ms ease forwards;
+	-webkit-animation-delay: .8s;
+}
+.logo_petit{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	top: 200px;
+	left: calc(50% - 90px);
+	background: #fff center fixed;
+	padding: 30px;
+}
+
+.baseline{
+	text-align: center;
+	position: relative;
+	top: 70%;
+	opacity: 0;
+	
+	-webkit-transition: all .2s ease;
+	-webkit-animation: fadeInUp 700ms ease forwards;
+	-webkit-animation-delay: 1s;
+}
+
+.section_header_projet h1, .projet_content h1{
+	max-width: 100%;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	font-weight: 700;
+	text-align: center;
+}
+
+.projet_content h1{
+	margin-top: 50px;
+}
+
+.section_header_projet_h1_animation{
+	opacity: 0;
+	-webkit-transition: all .2s ease;
+	-webkit-animation: fadeInUp 700ms ease forwards;
+	-webkit-animation-delay: .5s;
+}
+.section_header_projet_h2_animation{
+	opacity: 0;
+	-webkit-transition: all .2s ease;
+	-webkit-animation: fadeInUp 700ms ease forwards;
+	-webkit-animation-delay: .7s;
+}
+
+.section_header_projet h2, .projet_content h2{
+	width: 800px;
+	text-align: center;
+	position: relative;
+	top: 55%;
+	font-weight: 200;
+	text-align: center;
+	margin: auto;
+	line-height: 150%;	
+}
+
+.projet_content h2{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+/* ===============================
+			FOOTER
+=============================== */
+footer p{
+	padding-top: 20px;
+	text-align: center;
+	clear: both;
+}
+
+/* ===============================
+			NAV
+=============================== */
+/* MENU */
+
+.subMenu {
+	background: #fff;
+	width: 100%;
+	height: 80px;
+	margin-top: -30px;
+	position: fixed;
+	z-index: 20;
+	
+	-webkit-transition: all .0s ease;
+	-webkit-animation: fadeInUp 700ms ease forwards;
+}
+
+.subMenu ul{
+	display: inline-block;
+	padding: 0;
+	float: right;
+}
+.subMenu li{
+	float: left;
+	list-style: none;
+	opacity: 0;
+	margin-right: 60px;
+	font-size: 20px;
+	position: relative;
+	cursor: pointer;
+	
+	-webkit-transition: all .2s ease;
+	-webkit-animation: fadeInUp 700ms ease forwards;
+}
+.subMenu li:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 30px;
+	left: calc(50% - 3px);
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #ccc;
+	
+	transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+}
+
+.subMenu li:hover:after{
+	background: #36A1AF;
+}
+
+.subMenu li:first-child{
+	-webkit-animation-delay: .1s;
+}
+
+.subMenu li:nth-child(2){
+	-webkit-animation-delay: .2s;
+}
+
+.subMenu li:nth-child(3){
+	-webkit-animation-delay: .3s;
+}
+
+.subMenu li:nth-child(4){
+	-webkit-animation-delay: .4s;
+}
+
+.subMenu li:nth-child(5){
+	-webkit-animation-delay: .5s;
+}
+
+.section_menu--logo{
+	width: 180px;
+	margin-top: 15px;
+	float: left;
+	
+}
+
+.subMenu a:hover {
+	background: #1783c7;
+}
+
+.active {
+	background: #25aae1;
+}
+
+/* ===============================
+			CHEVRON
+=============================== */
+
+.scrolldown {
+	background: url(../_images/chevron_white.png) 50% 55% no-repeat;
+	background-size: 40%;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: calc(100vh - 60px);
+	margin: -25px 0 0 -25px;
+	
+}
+
+.scrolldown:after {
+  	z-index: 1;
+  	content: "";
+  	position: absolute;
+  	top: 1px;
+  	bottom: 1px;
+  	left: 1px;
+  	right: 1px;
+  	border-radius: 100%;
+  	background: transparent;
+  	border: 1px solid #fff;
+  	-webkit-animation: pulse 2s infinite;
+}
+
+
+/* ===============================
+			ANIMATIONS
+=============================== */
+
+@-webkit-keyframes pulse {
+
+  0% {
+    -webkit-transform: scale(0.8);
+    opacity: 0;
+  }
+
+  50% { opacity: 1; }
+
+  100% {
+    -webkit-transform: scale(1.1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes textApparition {
+
+	0% { -webkit-transform:translateY(10px); opacity: 0; }
+	100% { -webkit-transform:translateY(0px); opacity: 1; }
+
+}
+
+@-webkit-keyframes fadeInUp {
+  	
+  	0% {
+    	opacity: 0;
+    	-webkit-transform: translateY(40px);
+  	}
+
+	100% {
+    	opacity: 1;
+    	-webkit-transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes opacity {
+  	
+  	0% {
+    	opacity: 0;
+  	}
+
+	100% {
+    	opacity: 1;
+	}
+}
+
+/* ===============================
+		MEDIA QUERIES
+=============================== */
+
+@media (max-width: 1000px){ 
+	.container{
+		
+	}
+																																								
+}
